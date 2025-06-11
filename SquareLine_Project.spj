@@ -1182,7 +1182,15 @@
               {
                 "nid": 10,
                 "strtype": "OBJECT/Name",
-                "strval": "Image2",
+                "strval": "checkengine",
+                "childs": [
+                  {
+                    "nid": 15,
+                    "strtype": "_codename/Codename",
+                    "strval": "checkengine",
+                    "InheritedType": 10
+                  }
+                ],
                 "InheritedType": 10
               },
               {
@@ -1296,6 +1304,7 @@
               },
               {
                 "nid": 1010,
+                "flags": 1048576,
                 "strtype": "IMAGE/Image",
                 "InheritedType": 1
               },
@@ -1327,7 +1336,22 @@
               },
               {
                 "part": "lv.PART.MAIN",
-                "childs": [],
+                "childs": [
+                  {
+                    "nid": 10000,
+                    "strtype": "_style/StyleState",
+                    "strval": "DEFAULT",
+                    "childs": [
+                      {
+                        "nid": 11020,
+                        "strtype": "_style/Blend_opacity",
+                        "integer": 40,
+                        "InheritedType": 6
+                      }
+                    ],
+                    "InheritedType": 1
+                  }
+                ],
                 "nid": 1060,
                 "strtype": "IMAGE/Style_main",
                 "strval": "lv.PART.MAIN, Rectangle, Image, Transform",
@@ -1345,7 +1369,15 @@
               {
                 "nid": 10,
                 "strtype": "OBJECT/Name",
-                "strval": "Image3",
+                "strval": "watertemp",
+                "childs": [
+                  {
+                    "nid": 15,
+                    "strtype": "_codename/Codename",
+                    "strval": "watertemp",
+                    "InheritedType": 10
+                  }
+                ],
                 "InheritedType": 10
               },
               {
@@ -1459,6 +1491,7 @@
               },
               {
                 "nid": 1010,
+                "flags": 1048576,
                 "strtype": "IMAGE/Image",
                 "InheritedType": 1
               },
@@ -1490,7 +1523,33 @@
               },
               {
                 "part": "lv.PART.MAIN",
-                "childs": [],
+                "childs": [
+                  {
+                    "nid": 10000,
+                    "strtype": "_style/StyleState",
+                    "strval": "DEFAULT",
+                    "childs": [
+                      {
+                        "nid": 10630,
+                        "strtype": "_style/Bg_Image_Recolor",
+                        "intarray": [
+                          64,
+                          64,
+                          255,
+                          255
+                        ],
+                        "InheritedType": 7
+                      },
+                      {
+                        "nid": 11020,
+                        "strtype": "_style/Blend_opacity",
+                        "integer": 45,
+                        "InheritedType": 6
+                      }
+                    ],
+                    "InheritedType": 1
+                  }
+                ],
                 "nid": 1060,
                 "strtype": "IMAGE/Style_main",
                 "strval": "lv.PART.MAIN, Rectangle, Image, Transform",
@@ -1661,7 +1720,7 @@
     "description": "",
     "board": "Arduino with TFT_eSPI",
     "board_version": "v1.1.1",
-    "editor_version": "1.5.2",
+    "editor_version": "1.5.3",
     "image": "",
     "export_temp_image": false,
     "force_export_images": false,
@@ -1675,7 +1734,7 @@
     "uiExportFolderPath": "C:\\Users\\mrblah\\Documents\\PlatformIO\\Projects\\Waveshare-ESP32-S3-Touch-LCD-4.3-main\\lib\\ui\\src",
     "projectExportFolderPath": "C:\\Users\\mrblah\\Documents\\PlatformIO\\Projects\\Waveshare-ESP32-S3-Touch-LCD-4.3-main",
     "custom_variable_prefix": "uic",
-    "backup_cnt": 16,
+    "backup_cnt": 18,
     "autosave_cnt": 0,
     "group_color_cnt": 0,
     "lvgl_version": "8.3.6",
